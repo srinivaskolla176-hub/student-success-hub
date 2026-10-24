@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Success Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Success Hub</h1>
+        <p>Your academics, organized in one place.</p>
+    </header>
+
+    <main class="container">
+        <section class="cards">
+            <div class="card">
+                <h3>Assignments</h3>
+                <p id="assignmentCount">0</p>
+            </div>
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>Track your attendance</p>
+            </div>
+            <div class="card">
+                <h3>Exam Marks</h3>
+                <p>Monitor your progress</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Add Assignment</h2>
+            <form id="assignmentForm">
+                <input id="title" type="text"
+                       placeholder="Assignment title" required>
+                <input id="subject" type="text"
+                       placeholder="Subject" required>
+                <input id="dueDate" type="date" required>
+                <button type="submit">Add Assignment</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>My Assignments</h2>
+            <ul id="assignmentList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student Success Hub | Learn, Plan, Succeed</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
