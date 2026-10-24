@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5fc;
+    color: #243047;
+}
+
+header {
+    background: #3157c8;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.card, .panel {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.card h3 {
+    color: #3157c8;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.panel {
+    margin-top: 22px;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid #ccd3e0;
+}
+
+button {
+    border: none;
+    background: #3157c8;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #203f9b;
+}
+
+li {
+    background: #f2f5fc;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 7px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #606b80;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 25px;
+    }
+}
